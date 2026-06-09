@@ -1,0 +1,157 @@
+CompSci 101, Fall 2025
+Syllabus
+
+All times are in Eastern Time.
+
+1 Personnel & Office Hours
+
+Professors
+
+Name: Susan Rodger
+Office: LSRC D237
+Office Hours: Mondays 2:00pm-3:00pm, Tuesdays 4:30pm-5:30pm, Wednesdays 10:30am-11:30am
+Notes: Hours are in person AND on Zoom. Zoom links are posted on Ed. Subject to change.
+
+Name: Alex Steiger
+Office: LSRC D312
+Office Hours: Wednesdays 3:00pm-4:00pm, Thursdays 1:05pm-2:05pm
+Notes: Hours are in person AND on Zoom. Contact via email to schedule outside of OH.
+Email: asteiger AT cs.duke.edu
+
+Graduate TAs
+
+Name: Allyson Cui (Assignments and Classwork/WOTOs)
+Office Hours: Mondays 12:00pm-1:30pm, Wednesdays 12:30pm-2:00pm (LSRC D309)
+Email: allyson.cui@duke.edu
+
+Name: Sanya Srivastava (Reading Quizzes, APTs, and Labs)
+Office Hours: Mondays 2:45pm-4:15pm in LSRC D316, Wednesdays 2:00pm-3:00pm in LSRC D122
+Email: sanya.srivastava@duke.edu
+
+HEAD Undergraduate TAs (UTAs)
+* Jerry Zou (Labs)
+* Vivian Malnove (Grading)
+* Katherine Newbold (Consulting Hours)
+
+Lab UTAs
+Yasmine Abdel-Rahman, Rachel Collins, Ryan Hamilton, Will Katz, Amy Liu, 
+Vivian Malnove, Katherine Newbold, Radhika Subramani, Avari Wang, Jerry Zou
+
+Grader UTAs
+Vivian Malnove, Melina Marjani, Maria Romero Degwitz
+
+2 Course Details
+
+Topics Covered
+* Python Data, Variables, operators
+* Functions
+* Conditionals (if), logic operators
+* Looping structures (for, while)
+* Turtle Graphics
+* Strings
+* Lists, Tuples
+* Files
+* Sets, Dictionaries
+* Recursion
+
+Learning Goals
+1. Problem Decomposition: Dissect problems into manageable smaller units, code solutions for these units, and integrate these solutions to address the overarching goal.
+2. Python Proficiency: Develop your own Python program, be it a game, data analysis tool, or a creative venture. This encompasses fundamental constructs, idioms, basic data structures, and introductory testing methods.
+3. Library Literacy: Dive into Python library documentation outside our course curriculum and understand them enough to use some of their functionality.
+
+Course Meeting Times
+
+Lectures:
+* Section 01 (Prof. Rodger): Tuesday and Thursday, 10:05am - 11:20am @ Griffith Theatre (Bryan Center)
+* Section 02 (Prof. Steiger): Tuesday and Thursday, 3:05pm - 4:20pm @ Griffith Theatre (Bryan Center)
+
+Lab Sections (Fridays):
+* 01L: Fri 8:30am - 9:45am | Bio Sci 155 | Avari Wang
+* 02L: Fri 10:05am - 11:20am | Bio Sci 63 | Kate Newbold, Ryan Hamilton
+* 03L, 04L, 05L: Fri 10:05am - 11:20am | French Sci 2237 | Radhika Subramani, Will Katz
+* 06L--10L: Fri 11:45am - 1:00pm | Bio Sci 154 | Jerry Zou, Rachel Collins
+* 11L, 12L, 13L: Fri 1:25pm - 2:40pm | Old Chem 201 | Vivian Malnove, Maria Romero Degwitz
+* 14L: Fri 3:05pm - 4:20pm | Bio Sci 154 | Amy Liu
+
+3 Resources & Tools
+
+Websites Used
+* Course Website: http://www.cs.duke.edu/courses/fall25/compsci101/
+* Canvas: Grades and announcements.
+* Ed Discussion: Class bulletin board (accessed via Canvas). Check daily.
+* PrairieLearn: Reading quizzes and APT quizzes.
+* Runestone Interactive: Online textbook site.
+* APT Site: Hosts automated testing for APT problems.
+* Python Tutor: Visual tool for stepping through execution.
+* Reviewer App: Duke-created practice tool.
+
+Required Text
+"How To Think Like a Computer Scientist - Learning with Python: Interactive Edition" 
+by Jeffrey Elkner, Allen B. Downey, and Chris Meyer.
+* Access: Account info and specific Runestone course names are emailed/posted to Canvas. DO NOT change the username emailed to you.
+* Cost: Electronic book; a $10 donation is requested to support the Runestone Academy servers.
+
+4 Policies & Grading
+
+Grading Breakdown
+Grading is on an absolute scale (no curve): 94%+=A, 90%=A-, 80%=B range, 70%=C range, 60%=D.
+
+Category                                | Weight
+----------------------------------------|--------
+Labs                                    | 6%
+Reading Quizzes (PrairieLearn)           | 2%
+Class Participation (WOTOs)             | 2%
+APTs                                    | 10%
+Programming Assignments                | 10%
+Three Midterm Exams (15% each) & Final  | 70% (Midterms 45% total, Final 25%)
+
+AI (LLM) Policy
+* Prohibited: You cannot use AI/LLMs to solve problems or write code for you.
+* Allowed: You may use LLMs for general foundational questions (e.g., "What is the format of an if statement in Python?", "Give me an example of a list loop for a beginner").
+
+Pre-Lecture Work & Quizzes
+* Readings/videos are assigned before each lecture. 
+* A corresponding PrairieLearn quiz must be submitted BEFORE 10:00am on the day of lecture. No makeups allowed. 
+* Up to 3 attempts are allowed per quiz (highest score counts). Lowest quiz points dropped at the end of the semester.
+* Exception: QZ01-QZ05 will remain open until Sept. 9 at 10:00am to accommodate drop/add.
+* Programming assignments also have a dedicated reading quiz in PrairieLearn to be completed before coding.
+
+Lecture & WOTOs
+* Attendance is required for your assigned section. 
+* Lectures include synchronous WOTO (working together) peer activities in the textbook that must be completed during class. A few low WOTO scores are dropped.
+
+Labs
+* Held on Fridays. Attendance is mandatory and recorded by UTAs.
+* Completed with a partner, but individual forms must be submitted by Sunday 11:59pm following the lab.
+* Grading (5-point scale): 1 pt pre-lab, 2 pts attendance, 2 pts completion. (If no pre-lab, 3 pts completion).
+* Absences: If you miss lab, you can submit the form by Sunday for partial credit (losing the 2 attendance points). Missing more than 3 labs will impact your grade; the 3 lowest labs are dropped, meaning attendance points cannot be recovered for any reason.
+
+APTs
+* Code solutions are evaluated purely via automated online tests. Hardcoded input strings checking via sequential if-statements receive 0 credit.
+* Due at 11:59pm on due dates. A 24-hour grace period applies automatically (no penalty). Late submissions past the grace period are not accepted.
+
+Programming Assignments
+* Due at 11:59pm. Submissions go through Gradescope.
+* Passing 85% of automated test suites typically results in full credit. If you suspect a Gradescope framework bug, verify it with a Grad TA/Instructor on Ed or in OH before grading reconciliation.
+* Late Policy:
+  * Up to 24 hours late: Grace period (0% penalty)
+  * 24 to 72 hours late: 10% penalty
+  * 72 hours to 1 week late: 30% penalty
+  * Post 1 week: No submissions accepted.
+
+Extensions
+* Every student receives four free 3-day extensions to use on any APT or assignment (except during the final week of classes). 
+* A 3-day extension means 2 days past the standard grace period. You must complete the extension form on the course site before the original deadline. Only 1 extension permitted per assignment.
+* Extensions are also granted for documented athletic travel or medical reasons (requires filling out both the course extension form and the Duke Short-term Incapacitation Notification).
+
+Exams
+* Three midterms and one comprehensive Block Final Exam. 
+* Final Exam Date: Thursday, December 11, 7:00pm - 10:00pm (Room TBA).
+* Final Score Adjustment: At the end of the term, if your final exam grade is higher than your lowest midterm grade, the difference (up to a maximum of 15 points) will be added to that lowest midterm score.
+* Missed Midterms: Excused absences (e.g., Short-Term Incapacitation) must be made up within 3 class days. Unexcused misses score 0.
+* Rules: Exams are individual, closed-communication work. You cannot discuss an exam with anyone until it is formally handed back.
+
+SDAO Accommodations
+If you require accommodations, you must complete both steps:
+1. Fill out the accommodation form listed on the course forms page.
+2. Ensure your official SDAO letter is emailed directly to both Prof. Rodger and Prof. Steiger.

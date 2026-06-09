@@ -1,0 +1,113 @@
+================================================================================
+ECE 250 / CS 250: COMPUTER ARCHITECTURE - FALL 2026
+================================================================================
+
+COURSE OVERVIEW & OBJECTIVES
+--------------------------------------------------------------------------------
+Objective: Learn how computers work, focusing on how computer hardware executes 
+software.
+Core Focus Areas: Instruction sets, assembly language programming, basic digital 
+logic design, processor design, memory system design, and input/output (I/O).
+Prerequisites: CompSci 201
+
+CLASS HOURS & LOCATIONS
+--------------------------------------------------------------------------------
+Lectures: Monday, Wednesday, Friday | 8:45 AM - 9:35 AM | Location: TBD
+Recitations: Thursdays | Location/Time: TBD
+
+INSTRUCTIONAL TEAM & CONTACT CHANNELS
+--------------------------------------------------------------------------------
+*Note: Due to large class size, students must look for help via these options 
+in order before contacting the professor directly:*
+1. Course Website
+2. Canvas Announcements
+3. Ed Discussion Forum (monitored by TAs, classmates, and professor)
+4. Contact the Professor only for issues that cannot be handled by anyone else.
+
+Instructor: Prof. Daniel J. Sorin
+Office: 403 Wilkinson
+Office Hours: TBD
+Email: sorin@ee.duke.edu
+
+Graduate Teaching Assistant: Md. (Hassan) Hassanuzzaman
+
+REQUIRED TEXTBOOK
+--------------------------------------------------------------------------------
+Title: Computer Organization and Design: The Hardware/Software Interface
+Edition: 5th Edition
+Authors: David A. Patterson and John L. Hennessy
+Publisher: Morgan-Kaufmann
+Important Note: Do NOT get the "ARM", "RISC-V", or "Revised Printing" editions.
+Copies are available through the Duke Libraries.
+
+ASSIGNMENTS & GRADING BREAKDOWN
+--------------------------------------------------------------------------------
+Course components include textbook readings, pencil/paper problems, programming 
+assignments, and digital logic designs.
+
+Grade Weights:
+- Homework Assignments: 45% (Note: Assignments are not weighted equally)
+- Midterm Exam 1:        15%
+- Midterm Exam 2:        15%
+- Final Exam:            25%
+
+LATE HOMEWORK POLICY
+--------------------------------------------------------------------------------
+- No exceptions, no extensions (except in case of an official Dean's Excuse).
+- Review Homework #1 for details on the Short-Term Incapacitation (STINF) 
+  protocol providing an automatic 48-hour extension.
+- Standard Late Penalties:
+  * 0 to 24 hours late:  Earned score multiplied by 0.9 (10% penalty)
+  * 24 to 48 hours late: Earned score multiplied by 0.8 (20% penalty)
+  * >48 hours late:      No credit (0% score)
+- Multi-Part Assignments: If an assignment contains separate parts (e.g., written 
+  problems and code/logic design), late penalties are calculated and applied 
+  separately to each part. Penalties are NOT applied on a per-question basis.
+
+EXAM POLICY & ACADEMIC INTEGRITY
+--------------------------------------------------------------------------------
+- Attendance is mandatory for all exams. 
+- Makeup exams are only permitted with an official Dean's Excuse or a documented 
+  STINF illness.
+- Academic Misconduct: Cheating on homework or exams will not be tolerated. All 
+  suspected violations will be systematically referred to the Duke Office of 
+  Student Conduct. Refer to Homework #1 and the Duke Community Standard.
+
+TOPICS & TEXTBOOK READING MAPPING
+--------------------------------------------------------------------------------
+*Lecture notes will be posted in PDF format on Sakai shortly before class. 
+Attending lectures is critical to catching all covered material.*
+
+Topic                                     | Reading Assignment
+------------------------------------------|-------------------------------------
+Course Introduction and Overview           | Chapter 1
+Instruction Sets and Assembly Programming  | Chapter 2
+Digital Logic Design                      | Appendix B
+Processor Core Design: Datapath & Control | Chapter 4 (Sections 4.1 - 4.4)
+Memory and Caches                         | Chapter 5
+Input/Output (I/O)                        | Covered somewhat in Appendix A.8
+Pipelined Processor Cores                 | Chapter 4 (Section 4.5 to end)
+Multicore Processors (Time Permitting)     | Chapter 6
+
+COURSE SCHEDULE (TENTATIVE)
+--------------------------------------------------------------------------------
+Week Of  | Monday            | Wednesday          | Thursday (Recitation)       | Friday
+---------|-------------------|--------------------|-----------------------------|-------------------------------------
+Aug 24   | Intro / Overview  | C Programming      | Using UNIX Machine          | C Programming [HW1 Rules Due]
+Aug 31   | C Programming      | C Programming      | Intro to Writing C Prog     | C Programming [HW2 UNIX Due]
+Sep 07   | LABOR DAY (No Cls)| From C to Binary   | C Prog: Pointers & Memory   | From C to Binary
+Sep 14   | From C to Binary   | Assembly           | Asm Prog: Examples / SPIM   | Assembly [HW3 C Due]
+Sep 21   | Assembly          | Assembly           | Asm Prog: Calling Conv.     | Combinational Logic
+Sep 28   | Combinational Log.| Sequential Logic   | Review for Midterm #1       | MIDTERM #1
+Oct 05   | Sequential Logic  | Sequential Logic   | Digital Design & Logisim    | Datapath Design [HW4 Asm Due]
+Oct 12   | FALL BREAK (No Cls)| Exceptions/Syscalls| Logisim for Large Projects  | Memory Hierarchies
+Oct 19   | Caches            | Caches             | Advanced Logisim            | Caches [HW5 Logic Due]
+Oct 26   | Virtual Memory    | Virtual Memory     | Review for Midterm #2       | Virtual Memory
+Nov 02   | MIDTERM #2        | I/O                | Cache / VMem Examples       | I/O
+Nov 09   | I/O               | Pipelines          | Cache / VMem Examples       | Pipelines [HW6 CPU Due]
+Nov 16   | Pipelines         | Pipelines          | Pipeline Examples           | Multicore Processors
+Nov 23   | Multicore Procs.  | THANKSGIVING BREAK | THANKSGIVING BREAK (No Cls) | THANKSGIVING BREAK (No Cls)
+Nov 30   | Opt: Adv Comp Arch| Niagara Processor  | Review for Final Exam       | Review for Final Exam [HW7 CacheSim Due]
+Dec 07   | READING PERIOD    | FINALS WEEK        | FINALS WEEK                 | FINALS WEEK
+Dec 14   | FINALS WEEK ENDS  | -                  | -                           | -
+================================================================================

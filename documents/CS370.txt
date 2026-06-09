@@ -1,0 +1,67 @@
+COMPSCI 370D: Artificial Intelligence - Spring 2024
+Syllabus
+
+Course Overview
+This course introduces the foundational concepts and computational techniques that underpin intelligent computer systems, alongside foundational algorithms for machine learning. 
+
+Tentative Topics:
+Search, game trees, reinforcement learning, regression, classification, clustering, density estimation, model selection, regularization, resampling methods.
+
+Class Meetings: Mondays and Wednesdays, 4:40 pm – 5:55 pm in LSRC B101
+Canvas: Announcements, logistical modifications, and updates will be posted here regularly. Check daily.
+
+1 Grading Scale & Components
+
+Grading Weights
+* Written Assignments (4 total; lowest 1 score dropped): 15%
+* Coding Assignments (4 total; lowest 1 score dropped): 25%
+* Midterm Exams (2 total; 30% each): 60%
+
+Letter Grade Baselines
+Grades are mapped to the following raw percentage tiers. Instructors retain the option to curve grades at the end of the semester, but only if it improves the student's earned grade.
+* >= 90%: A- tier or higher
+* >= 80%: B- tier or higher
+* >= 70%: C- tier or higher
+* >= 60%: D- tier or higher
+
+2 Assignment Policies
+
+Deliverables & Late Windows
+* Assignments comprise four Python coding tasks (C1–C4) and four written analysis sets (W1–W4). All tasks are due strictly by 11:59 pm Eastern Time on their scheduled due dates.
+* Grace/Late Period: Submissions uploaded between 12:00 am and 1:59 am the following morning automatically incur a 20% penalty deduction from the total possible points.
+* Absolute Cutoff: Submissions received after 2:00 am are rejected for 0 credit.
+* Drop Policy: Your single lowest coding score and single lowest written score are dropped. This policy covers all standard emergencies, tech problems, dynamic changes, or personal setbacks. No extra extensions or exceptions are granted.
+
+Prerequisites & Grading Formats
+* Language: Python. No prior mastery is assumed, but students must pick up basics rapidly. Tutorial C0 is provided to establish foundational skills.
+* Coding Evaluation: Processed automatically for technical correctness, supplemented by manual reviews for fair tracking.
+* Written Evaluation: Tasks focus on concept derivation and act as previews for exam problems. Written assignments are graded strictly on completion/effort rather than correctness.
+
+Collaboration Rules
+* Tutorial C0: Must be completed completely individually.
+* Coding Assignments (C1–C4): May be completed solo or in pairs. Teams must tag both members on the active submission. Submissions must reflect shared work; taking turns alternating assignments is strictly forbidden. Both members must be capable of re-deriving or explaining all submitted logic.
+* Written Assignments (W1–W4): Must be submitted individually. Group discussions are allowed, but you must explicitly acknowledge all peers and external resources consulted on your submission document. 
+* AI Tools: Automatic code generators are strictly prohibited.
+
+Regrade Requests
+* Must be directed to the TA team within 72 hours of receiving grade feedback.
+* Requests citing misapplications of the standard grading rubric are far more likely to succeed than requests arguing against the rubric's structural point distribution values, as rubrics are applied uniformly across the entire class.
+
+3 Exam Structure & Replacement Policy
+
+Midterms
+* All exams are paper-based, closed-book, closed-resource, and administered in person. 
+* Midterm 1 covers the first half of the semester's material. Midterm 2 covers the second half. Each exam constitutes 30% of your final grade.
+
+Final Exam & Score Optimization
+* The final exam takes place during the registrar-scheduled block final period. It is split chronologically into Part 1 (covering Midterm 1 topics) and Part 2 (covering Midterm 2 topics).
+* Makeup Pass: The final exam acts as a zero-penalty makeup for a missed midterm.
+* Improvement Drop Policy: It serves as an optional remediation path if you are unhappy with your mid-semester grades. The lower score between Midterm 1 and Final Part 1 is dropped, and the lower score between Midterm 2 and Final Part 2 is dropped. 
+* Safety Net: The final exam cannot lower your existing exam scores; if you score lower on a final section, your original midterm score stands. No further makeup dates are offered.
+
+4 Optional Reference Textbooks
+* [AIMA] "Artificial Intelligence: A Modern Approach" (4th edition) by Stuart Russell and Peter Norvig. Pearson, 2020.
+* [ISLP] "An Introduction to Statistical Learning with Applications in Python" by Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. Springer, 2023.
+
+5 Academic Integrity
+All students are bound by Duke University’s high standards of academic honesty. Prohibited academic misconduct includes cheating, fabrication, plagiarism, unauthorized group collaboration, using prohibited AI code generators, or facilitating others in these infractions. Violations carry serious penalties, up to and including assignment failure, formal course failure, disciplinary probation, suspension, or expulsion.

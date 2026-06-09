@@ -1,0 +1,80 @@
+CompSci 116, Fall 2021
+Foundations of Data Science
+Syllabus
+
+Course Overview & Philosophy
+This course is an adaptation of the Data8 curriculum from the University of California, Berkeley. The syllabus contains experimental elements that are subject to change based on active classroom learning dynamics. The core philosophy is that your grade should reflect your cumulative mastery of the material rather than strict speed or timeline constraints.
+
+COVID-19 Precautions
+* Face masks are required for all in-person lectures and office hours per university mandates.
+* If you test positive, immediately file a Short-Term Illness Form.
+
+1 Group Logistics & Learning Pods
+* You will work in three distinct groups over the course of the semester.
+* Groups act as your primary "learning pod" to collaboratively master content.
+* Group Formations: The first two group rotations are randomly assigned by staff. You are permitted to select your own group members for the final third rotation.
+* Peer Feedback: Between each group rotation, students must complete mandatory mutual peer feedback evaluations and self-reflections on group performance.
+
+2 Modular Course Activities
+The semester is broken down into structured, topic-focused modules. Each module contains four components:
+
+1. Videos
+* Pre-recorded instructional videos sourced from the edX Data8 course sequence. These must be watched independently before coming to class.
+
+2. Homework [Due: Sunday 11:59 PM]
+* A Sakai quiz designed to check comprehension of pre-lecture videos. 
+* Due at least 24+ hours before the first corresponding live class session (typically Sunday evening). 
+* Grading: You are allowed up to three attempts per quiz; the highest score is recorded. Scoring an 80% or higher yields full credit (100%) automatically.
+
+3. In-Class Group Worksheet
+* Completed with your learning pod during the first live session of a module.
+* Worksheets are explicitly tailored to address the lowest-scoring concepts from that module's homework quiz aggregate data. Graded purely on completion.
+
+4. Labs
+* Hands-on programming sessions using Jupyter Notebooks. These are filled out individually, but you are encouraged to work through them collaboratively with your group during class.
+
+3 Projects & Exams
+
+Projects
+There are three milestone projects corresponding to your three group rotations:
+* Projects 1 & 2: Structural datasets assigned by staff that span across all modules covered during that third of the semester.
+* Project 3 (Final Project): An open-ended project of your group's choosing. Your group is responsible for finding, cleaning, exploring, and analyzing a unique dataset.
+
+Exams
+* Three evenly spaced midterms administered individually. 
+* To minimize high-stakes stress, Exam 3 takes place on the final day of standard class rather than a block final exam period.
+* Before Exam 1, the instructor will run an in-class mock exam so students can familiarize themselves with the testing environment and formatting.
+
+4 Grading & Policies
+
+Grading Weights Breakdown
+Note: As of 10/30/21, the weight of Exam 1 was lowered from 15% to 12%, and Exam 3 was raised from 15% to 18% to reflect the cumulative nature of the building technical concepts.
+
+Course Activity                   | Weight
+----------------------------------|--------
+Homework                          | 10%
+Group Worksheets                  | 3%
+Group Feedback & Reflections      | 3%
+Labs                              | 15%
+Project 1                         | 6%
+Project 2                         | 8%
+Project 3 (Final Project)         | 10%
+Exam 1                            | 12%
+Exam 2                            | 15%
+Exam 3                            | 18%
+
+Late Work & Extensions
+* Late Windows: Homework quizzes can be submitted 1 day late (Sakai restricts this to a single submission if no prior attempt exists). Labs can be submitted up to 2 days late (typically matching the Sunday deadline of the subsequent module). No point penalties are deducted for utilizing these late windows.
+* Extension Form: If you fail to submit a homework assignment entirely within the late window due to extenuating circumstances, you are allowed one "no-questions-asked" extension request. Once processed, you receive a single submission window per Sakai quiz until 11:59 PM the following day. Beyond this single free pass, further extensions must be requested by emailing Prof. Stephens-Martinez.
+
+Regrades
+* Submitted via the Gradescope regrade feature within one week of the assignment's return. 
+* Requests must explicitly demonstrate why a grading criteria was applied incorrectly rather than a general appeal for partial credit. Whole-assignment re-evaluations may occur. Core score changes are rare outside clear grader errors.
+
+Collaboration Code
+* All individual and collaborative components must strictly adhere to the Duke Community Standard. 
+* Absolute Collaboration: Highly encouraged on all homework preparation, lab modules, worksheets, and project deliverables.
+* Zero Collaboration: Prohibited from communicating with peers or using external aids during any of the three individual exams.
+
+Inclusion & Accommodations
+* Diversity Statement: This course is fully committed to Duke’s Diversity and Inclusion values, striving to create a non

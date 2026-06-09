@@ -1,0 +1,96 @@
+CS216 Everything Data - Spring 2025
+Syllabus
+
+Course Structure: Hybrid, Flipped, Just-in-Time
+* Hybrid: A Zoom session is associated with the class for equity. However, you are expected to attend class in person if at all possible. To attend online, you must request it on the forms page to receive that day's password.
+* Flipped: Easier-to-grasp material is learned before class via readings, videos, and comprehension quizzes. Class time is spent actively engaging with the more complex, harder-to-grasp concepts.
+* Just-in-Time: Canvas quiz data drives what happens in class, tailoring the focus to the topics the class least understood. Solutions to example problems are released after class.
+
+Course Modules & Components
+The course is divided into modules that are typically 1 week long. All due dates are at 11:59 PM unless otherwise noted.
+
+1. Prepare [Due: Typically Monday]
+* Contains videos and/or readings alongside auto-graded Canvas quizzes to ensure comprehension.
+* Grading: You can take each quiz up to three times. An overall score of 80% total across all quizzes in a specific Prepare module results in full credit (100%). Scores below 80% are scaled based on 80% being the maximum possible points (e.g., a total score of 72% results in a 90% grade).
+* Due 2 days before class. There is a 24-hour late window (typically Tuesday).
+* One no-questions-asked extension request is allowed per semester via the forms page.
+
+2. Class Participation [Due: Day of Class]
+* In-class active learning activities (peer instructions, think-pair-shares) based on Prepare performance.
+* Peer instructions involve two forms; think-pair-shares involve a single form.
+* These forms are available ONLY while being used during class.
+
+3. Worked Examples
+* In-class notebooks with local autograders to check problem-solving. These do not factor into your final grade and are not available for every module.
+
+4. Homework [Due: Typically Sunday]
+* Coding, data analysis, or statistics problems completed in a Jupyter notebook and submitted to Gradescope.
+* Grading: You may submit to Gradescope infinitely. A score of 90% or higher results in full credit using the formula: min(1, score / (points_possible * 0.9)).
+* Fresh Restart and Run All Rule: Final notebook submissions must execute perfectly from a fresh kernel restart. Failing to submit a clean "run all" notebook results in a 3% penalty of the possible points for that homework.
+* Homework Late Days: You receive 9 late-day tokens for the semester. You must submit the late day form within 24 hours of the due date (before or after). Late submissions are processed through Gradescope's 1-week late period. The calendar day in Duke’s time zone determines tokens spent.
+
+5. Class Engagement Points
+You must earn at least 60 engagement points by the end of the semester. Your grade for this section is calculated as min(your_points / 60, 1). Points are accumulated as follows:
+* 1 point: Fill out at least 1 form/activity during class.
+* 1 point: Fill out at least 75% of the forms/activities used in a single class day (rounded down).
+* 1 point: Fill out N-1 of N available forms/activities in a day.
+* 1 point: Fill out a survey (at least 3 surveys will be issued).
+* 2 points: Earn a perfect score on an Exam Study Quiz on Canvas (infinite attempts allowed; 2 quizzes total).
+* 1 point: Speak up in class (ask/answer a question or share group discussion results).
+* 1 point: Complete a module's "find data science in the real world" challenge.
+* Propose an alternate point pathway by contacting the professor.
+Note: Attending and actively engaging in all 20 class days (10 modules x 2 days) inherently yields the full 60 points.
+
+Exams (45% of total grade)
+There are two exams during the semester. Each exam consists of two parts:
+
+* Practicum: Focuses on producing code and interpreting results. May be completed solo or in pairs over a 48-hour window (takes 3-5 hours). Class is canceled on Practicum days. Open resource, including LLM usage, but you are graded on your explicit understanding of what the code does.
+* In-Person Exam: Focuses on data science concepts and critical thinking. Closed-resource, closed-Internet, and no LLMs.
+* Practicum Update: Groups receive feedback on the initial Practicum and have 3 days to submit an updated version and a change log. The final Practicum grade is a weighted average of the original and the update.
+* In-Person Exam Retakes: Offered during the Final Exam period (see DukeHub). Each retake takes up an equal portion of the block exam time window.
+
+Regrades
+Submitted via Gradescope. The regrade window opens 24 hours after an assignment is returned and remains open for 1 week. Requests must explain specifically why a grade change is justified. Submitting a regrade opens your entire assignment up to evaluation.
+
+Collaborative Project (10% of total grade)
+An open-ended collaborative project completed in groups of 4 or 5. Groups choose a research topic, formulate questions, acquire data, and perform processing, analysis, and modeling. 
+
+Grading Scale: Exemplary work receives 100%, and satisfactory work receives 90% per criterion to encourage creative exploration without grading penalties.
+Deliverables Breakdown:
+* Initial Plan: 0.5% (Brainstorm, reflection, and collaboration plan)
+* Proposal: 1% (Topic, data sources, and research questions)
+* Prototype: 2% (Methods, preliminary results, and reflection)
+* Video Presentation: 3% (Recorded presentation involving all group members)
+* Final Report: 3.5% (Comprehensive description of project, results, and conclusions)
+
+The "No Project Option"
+Students facing mitigating circumstances may choose to drop the project entirely. Opting into this drops all project milestones to a 0, naturally capping the final course grade at a B+ (since the project is worth 10%). Instructors will work with these students to stretch out deadlines and modify Practicums. To trigger this option, you must meet with Prof. Stephens-Martinez. Failing to submit a project milestone defaults to this pathway.
+
+Grading Weight Distribution
+* Prepare Quizzes: 15%
+* Homework Notebooks: 25%
+* Class Engagement Points: 5%
+* Course Project: 10%
+* Exams: 45% total
+  * Exam 1 (Covers more modules): 9.5% Practicum / 16.5% In-Person
+  * Exam 2: 7% Practicum / 12% In-Person
+
+Letter Grade Conversion Table
+Final numeric percentages map to grades using standard left-inclusive intervals:
+
+Grade | Percentage Window
+------|------------------
+A     | [95, 100]
+A-    | [90, 95)
+B+    | [87, 90)
+B     | [83, 87)
+B-    | [80, 83)
+C+    | [77, 80)
+C     | [73, 77)
+C-    | [70, 73)
+D+    | [67, 70)
+D     | [63, 67)
+D-    | [60, 63)
+F     | < 60
+
+Note: The A to A- cutoff is set at 95% (atypical) to ensure that earning a flat A requires earning an A on at least one exam component. A+ grades are capped for students who score a flat A and demonstrate exceptional course projects at the discretion of the instructor.

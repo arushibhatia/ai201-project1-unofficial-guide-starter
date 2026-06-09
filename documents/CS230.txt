@@ -1,0 +1,109 @@
+Spring 2020 - COMPSCI 230 - Discrete Mathematics for Computer Science
+Syllabus
+
+Course Overview
+Discrete mathematics lays the foundation on which much of modern computer science rests. This course provides an undergraduate-level introduction to discrete mathematics, highlighting its relevance to computer science through mathematical logic, set theory, mathematical induction, combinatorics, probability, and graph theory.
+
+***COVID-19 ONLINE POLICY UPDATE***
+In accordance with university policy, all aspects of the course are online. This supersedes any physical campus location listed.
+* Lectures: Moving online. Materials are delivered in two parts: (a) pre-recorded lecture videos uploaded to Sakai, and (b) live lecture discussions held via Zoom during regular class meeting times (also recorded and posted to Sakai).
+* Office Hours: Faculty office hours are strictly by appointment. All TA office hours are hosted via digital platforms.
+
+1 Personnel & Office Hours
+
+Instructor
+* Prof. Debmalya Panigrahi (Office: LSRC D203 | Email: debmalya@cs.duke.edu)
+  Office Hours: Mondays 3:00pm - 4:00pm (By appointment only; email both Debmalya and Kate to schedule).
+
+Teaching Associate
+* Kate O'Hanlon (Office: LSRC D105 | Email: kate.o.hanlon@duke.edu)
+
+Graduate Teaching Assistants (GTAs)
+* David Fischer (Email: def27@cs.duke.edu) | OH: Sunday 6:00pm - 8:00pm
+* Jingxian Huang (Email: jh654@cs.duke.edu) | OH: Monday 6:00pm - 8:00pm
+* Kevin Sun (Email: ksun@cs.duke.edu) | OH: Monday 7:00pm - 9:00pm
+* Shawn Sun (Email: ss1060@cs.duke.edu) | OH: Sunday 6:00pm - 8:00pm
+
+Undergraduate Teaching Assistants (UTAs)
+* Kevin Day (Email: kevin.day@duke.edu) | OH: Saturday 7:00pm - 8:00pm
+* Ethan Holland (Email: ethan.holland@duke.edu) | OH: Tuesday 8:00pm - 9:00pm
+* Jerry Huang (Email: jerry.huang@duke.edu)
+* Grace Llewellyn (Email: grace.llewellyn@duke.edu) | OH: Monday 6:00pm - 7:00pm
+* Yunhao Qing (Email: yq50@duke.edu) | OH: Wednesday 8:00pm - 9:00pm
+* Rahul Ramesh (Email: rahul.ramesh@duke.edu) | OH: Thursday 8:00pm - 9:00pm
+
+Weekly Office Hours Summary Schedule
+* Sunday: 6:00pm - 8:00pm (David Fischer, Shawn Sun)
+* Monday: 3:00pm - 4:00pm (Prof. Panigrahi) | 6:00pm - 9:00pm (Grace Llewellyn 6-7, Jingxian Huang 6-8, Kevin Sun 7-9)
+* Tuesday: 8:00pm - 9:00pm (Ethan Holland)
+* Wednesday: 8:00pm - 9:00pm (Yunhao Ye)
+* Thursday: 8:00pm - 9:00pm (Rahul Ramesh)
+* Friday: None
+* Saturday: 7:00pm - 8:00pm (Kevin Day)
+
+2 Class & Recitation Meetings
+
+Lectures
+* Mondays and Wednesdays @ 1:25pm - 2:40pm (Online live discussions via Zoom during this window).
+
+Recitation Sections (Held on Fridays)
+* Section 01 & 02D: 10:05am - 11:20am | David Fischer, Rahul Ramesh
+* Section 03D: 1:25pm - 2:40pm | David Fischer, Grace Llewellyn
+* Section 04D: 1:25pm - 2:40pm | Kevin Sun, Shawn Sun
+* Section 05D: 3:05pm - 4:20pm | Ethan Holland, Kevin Day
+
+3 Course Content & Resources
+
+Core Synopsis of Topics
+1. Introduction: Proof techniques
+2. Mathematical Logic: Propositional/Predicate Logic, Gödel's Incompleteness Theorem
+3. Set Theory: Sets, Sequences, Relations, Functions, Partial and Total Orders
+4. Mathematical Induction: Weak, Strong, and Structural Induction
+5. Graph Theory: Graph properties, Acyclic graphs (DAGs, Trees, Forests), Matchings
+6. Counting: Finite/Infinite Sets, Countable and Uncountable Sets
+7. Probability: Sample Spaces, Conditional Probability, Independence, Random Variables, Distributions
+
+Course Text & Materials
+* Lecture notes are uploaded to the course website following each session.
+* Primary Textbook (Covers most of syllabus): 
+  "Mathematics for Computer Science" by Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. Available freely online.
+
+4 Grading & Assessment Policies
+
+Grading Weight Distribution (Updated for Midterm 2 Cancellation)
+* Homework Assignments (Problem Sets): 35%
+* Homework Assignment (Programming Project): 15%
+* Midterm Exam 1: 15%
+* Class Participation (In-person & live Zoom discussions): 5%
+* Final Exam: 30%
+
+Exam Policy
+* Midterm 1: In-class, closed-book exam (Completed).
+* Midterm 2: Cancelled due to structural changes.
+* Final Exam (Friday, May 1): Online, take-home, open-book, open-notes exam. Released at 12:01am and due by 11:59pm Eastern Time. Designed to take roughly 3 hours to complete but is untimed within the 24-hour window.
+* Attendance Exceptions: Missed midterms accompanied by a verified Short-Term Incapacitation Notification (STINF) or Dean's excuse will have their missing weight shifted to the final exam score. Unexcused exam absences score a 0.
+
+Homework & Submission Guidelines
+* Submission Platform: Gradescope is used for all written and programming homework assignments.
+* Formatting: Written solutions must be cleanly typed and uploaded in PDF format. Formatting via LaTeX is highly encouraged. All programming solutions are evaluated via Gradescope frameworks.
+* Late Penalties: Homework is due strictly at 11:59pm Eastern Time.
+  * Submissions between 12:00am and 12:29am encounter an automatic 10% penalty deduction.
+  * Submissions from 12:30am onward are rejected automatically for 0 credit.
+  * Technical Backup: If Gradescope server issues occur, you may email files directly to course staff before the deadline. The same timestamp rules and late windows apply.
+* Extensions: Formal extensions must be requested by emailing the instructor directly *before* the submission deadline with an explicit justification. Granting extensions remains at the instructor's discretion; last-minute requests run the risk of denial, leaving the original deadline standing. TAs are unauthorized to modify deadlines.
+* Collaboration: Review the detailed course collaboration guidelines. Violations of the academic honesty policy are passed directly to university disciplinary boards without exception.
+
+5 Assignment Deadlines
+
+* Homework 1A: Released 1/13 | Due 1/27
+* Homework 1B: Released 1/19 | Due 1/27
+* Homework 2: Released 1/27 | Due 2/3
+* Homework 3: Released 2/3 | Due 2/10
+* Homework 4A: Released 2/10 | Due 2/17
+* Homework 4B: Released 2/16 | Due 2/24
+* Homework 5: Released 2/24 | Due 3/2
+* Homework 6A: Released 3/2 | Due 3/30 (Extended)
+* Homework 6B: Released 3/6 | Due 3/30 (Extended)
+* Homework 7: Released 3/30 | Due 4/6
+* Homework 8: Released 4/6 | Due 4/15 (Extended)
+* Coding Assignment: Released 4/6 | Due 4/22 (Includes Pair.java and Skeletons 1–4)

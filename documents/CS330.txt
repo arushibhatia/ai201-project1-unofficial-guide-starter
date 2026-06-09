@@ -1,0 +1,76 @@
+COMPSCI 330 Design and Analysis of Algorithms
+Summer 2018
+
+Class: M/Tu/W/Th 3:30 - 5:05pm (LSRC A156)
+Recitations: Tu/Th 2:00 - 3:15pm (Allen 103)
+Prerequisites: CompSci 201 and CompSci 230 (or equivalent)
+Course Website: https://www2.cs.duke.edu/courses/summer18/compsci330
+
+Instructor: Brandon Fain
+Office Hours: 2-3:20 pm M/W and 5:15-6:15 pm Th in LSRC D301
+Contact: By email at btfain@cs.duke.edu (expect a response within a business day)
+
+Required Book:
+Algorithms by Sanjoy Dasgupta, Christos Papadimitriou, Umesh Vazirani is required. The book is short (around 300 pages), cheap (around $36 new, cheaper used) and well written: We will read the entire text with regular reading assignments.
+
+Reference Book:
+Introduction to Algorithms, 3rd Edition, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein is not required, but is an optional reference text for anyone who wants supplementary material. It is around 1,000 pages and has a wealth of information and problems.
+
+Course Description:
+Algorithms are the mathematical formalizations of computer programs, and computer programs are the implementations in software of algorithms. Students will develop this dual view by considering classic problems in computer science, including sorting, searching, graph problems, multiplication, etc., from a mathematical perspective. Specifically, students will apply classic algorithmic design techniques, including greedy, divide and conquer, dynamic programming, randomized, and approximation algorithms in order to solve variants on these problems. Students will also conduct rigorous analysis using proofs of correctness and asymptotic analysis of efficiency.
+
+Course Objectives:
+Upon completion of this course, students will be able to:
+* Apply canonical algorithmic design techniques to write algorithms for computational problems in a variety of settings like sorting, linear algebra, graphs, and optimization.
+* Analyze algorithms with mathematical proofs of correctness and asymptotic analysis of efficiency.
+* Explain the implications of the formal analysis of algorithms for their implementation in software and computer science as a whole.
+
+Assignments:
+There will be two major types of assignments in the course: daily reading assignments and weekly homework assignments. I expect students to spend roughly two to three hours outside of class for every hour inside of class, on average. 
+
+Reading assignments typically consist of 10 to 30 pages from Algorithms, as well as suggested exercises from the book. Students should read carefully and explore definitions and examples in detail to get the most out of their reading. We will review the suggested exercises in recitation, but they will not be graded. I expect students to complete all readings before coming to class. In particular, we will not spend class time reiterating the same information from the readings. Instead, we will focus on applying material from the readings to novel problems.
+
+Weekly homework assignments (five in total) will not be from the book, and will be somewhat more involved than the suggested reading exercises. Students should start homework assignments early. Students are allowed (but not required) to work in groups of one to three on the homework assignments. However, (i) all students must write their own final solutions independently, (ii) should understand their final submission themselves, and (iii) should list who they worked with in their final submission. You should not use the internet to look up anything beyond basic definitions.
+
+Homework solutions should be typed and submitted as a pdf file. It is strongly encouraged, although not required, that solutions be written using LaTeX. Assignments will be released on the course website and submitted using Gradescope, which I will use for grading assignments. Our course has the Gradescope code 9P5ERN.
+
+Grades:
+The final summative grade for the course will be weighted in the categories given below.
+
+* Participation: 10%
+  Consistent attendance, completed readings and prepared for discussion, active problem solving in class.
+* 5 Homework Assignments: 40%
+  I will take the average of the best 4 out of 5 assignments.
+* 2 Midterm Exams: 30%
+  I will take the average of the two in class midterm exams.
+* Final Exam: 20%
+  In class and comprehensive.
+
+Letter grades will be assigned on the following standard scale. Fractions will always be rounded up (in the student’s favor), e.g., a 92.4 will be rounded up to a 93.
+
+A  93 - 100    C  73 - 76
+A- 90 - 92     C- 70 - 72
+B+ 87 - 89     D+ 67 - 69
+B  83 - 86     D  63 - 66
+B- 80 - 82     D- 60 - 62
+C+ 77 - 79     F  0 - 59
+
+Regrade Policy:
+Students confused about why they received a certain grade are always welcome to talk to me about it during office hours. However, students wishing to have a grade changed must make a written request through the regrade request feature on Gradescope no later than one week from the day the assignment is returned. Regrade requests should explain specifically why the student believes a different grade is more appropriate, not just ask for more partial credit without any reason. Please note that grade changes (apart from clear grader errors) are rare.
+
+Academic Integrity:
+All participants in this course are expected to uphold the Duke Community Standard; that is, to agree that “...I will not lie, cheat, or steal in my academic endeavors; I will conduct myself honorably in all my endeavors; and I will act if the Standard is compromised.” In all cases, failure to uphold this standard will result in referral to Office of Student Conduct. Any work that copies, paraphrases, or in any other way uses materials not your own without citation will be considered in violation. Any uncited collaboration with your peers on any assignment that does not explicitly instruct collaboration will also be considered in violation. 
+
+To be clear, “In the Department of Computer Science, we take the Community Standard seriously and expect you to do the same. Students who submit work that is not their own, shortchange not only their own learning but undermine the atmosphere of trust and individual achievement that characterizes Duke's academic community.”
+
+Disability Statement:
+“Students with disabilities who believe they may need accommodations in this class are encouraged to contact the Student Disability Access Office at (919) 668-1267 as soon as possible to better ensure that such accommodations can be implemented in a timely fashion.”
+
+Attendance:
+This course will strive to create an interactive environment with substantial student engagement. Student attendance is therefore imperative, as much of the discussion in class cannot be recreated outside of class, and absences will deprive peers (and absentees themselves) of useful insights. Exceptions may be made on a case by case basis for emergencies or illness. In the latter case, students should submit a short term illness notification form as outlined by the college. In both cases, you should be aware that misrepresenting the reasons for absence constitutes a violation of the Duke Community Standard.
+
+Late Work:
+Assignments will not be accepted after their due dates (given in the course outline below). Students should submit whatever work they have completed for partial credit rather than receive a 0 for late work.
+
+Tentative Course Outline:
+Please note that the following dates are tentative and subject to change. The course website will maintain updated information on all dates. All assignments, reading or otherwise, are due by the start of class on the listed due date. The required book, Algorithms, is abbreviated DPV (for the authors) below. DPV

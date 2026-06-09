@@ -1,0 +1,91 @@
+CPS 310 – Intro to Operating Systems
+Spring 2025
+(Last Modified: April 9, 2025)
+
+1 General
+
+Course
+Lecture: Mon/Wed 3:05-4:20pm
+Location: Biological Sciences 111
+Discussion: Fri 3:05-4:20pm (in LSRC B101)
+
+Instructors
+Name: Matthew Lentz
+Email: mlentz@cs.duke.edu
+Website: https://www.cs.duke.edu/~mlentz
+Office Hours: Fri 11am-12pm (LSRC D314) + (Briefly) After Lecture
+
+Coordinators
+Name: Alex Chao
+Email: alex.chao@duke.edu
+Website: https://cs.duke.edu/alex-chao
+
+Graduate TAs
+Alexander Du (alexander.du@duke.edu)
+Chenyang Liu (chenyang.liu@duke.edu)
+
+Undergraduate TAs
+Priyanshi Ahuja
+Aruj Bansal
+Adam Ebrahim
+Hunter Habersaat
+Ethan Hsu
+Hung Le
+Michael Li
+Arim Lim
+Lasal Mapitigama
+Vihaan Saharia
+
+Resources
+Website: https://courses.cs.duke.edu/spring25/compsci310
+Canvas: https://canvas.duke.edu/courses/48052
+Gradescope: https://www.gradescope.com/courses/900255/
+Ed: https://edstem.org/us/courses/68859/discussion/
+Office Hours: https://edstem.org/us/courses/68859/discussion/5940738
+Recordings: https://edstem.org/us/courses/68859/discussion/5940753
+Discussion Materials: https://gitlab.oit.duke.edu/os-course/discussions-s25
+
+2 Overview
+
+This course will focus on fundamental principles of operating systems. We will explore the various roles of the operating system which include managing and multiplexing available hardware resources, providing higher-level abstractions for applications to use in interacting with the hardware platform, and enforcing isolation and protection for software programs. We will cover topics such as: concurrency, file systems, synchronization, storage, virtualization, communication, security/protection, and scheduling. Additionally, we will explore how these concepts relate to modern systems beyond the operating system itself (e.g., distributed systems).
+
+3 Expectations
+
+3.1 Preconditions
+The prerequisite for this course is either: 1) you are a graduate student in CS or ECE, or 2) you have completed CPS 210 (Introduction to Computer Systems) or ECE/CPS 250 (Computer Architecture). Therefore, we expect that you already understand the basics of computer architecture, and that you have experience in implementing programming projects in C.
+
+If you feel that you could use a refresher on computer architecture, please refer to “Welcome to the Machine” by Jeff Chase: https://users.cs.duke.edu/~chase/systems/arch-overview.pdf.
+
+3.2 Postconditions
+After completing this course, we expect you to be able to:
+1. Understand the fundamentals of operating systems, including: concurrency, communication, protection, isolation, architecture, storage, and scheduling
+2. Implement common primitives (e.g., threads) in a simple operating system (i.e., xv6 from MIT) while writing programs that use these primitives on a real-world operating system (i.e., Linux)
+3. Understand various factors that impact performance and resource efficiency as a result of hardware and software running underneath your programs (e.g., virtual memory)
+4. Understand how operating systems concepts relate to broader systems (e.g., distributed systems), and how recent challenges/advances are shaping the design and implementation of modern operating systems (e.g., trusted hardware, high-speed I/O)
+
+4 Resources
+
+Textbooks
+We will be using the OSTEP textbook for this course. For each lecture in the schedule, there will be corresponding readings in the OSTEP book. This is a free, open-source textbook that is available online at the link below:
+1. Operating Systems in Three Easy Pieces (OSTEP)
+https://pages.cs.wisc.edu/~remzi/OSTEP/
+
+Other resources will be provided to you throughout the semester. If you wish to read through additional perspectives on the course content, you may want to reference one (or both) of the following textbooks:
+1. Operating Systems: Principles and Practice
+https://ospp.cs.washington.edu/index.html
+(Alternative to the above textbook)
+2. xv6: a simple, Unix-like teaching operating system
+https://pdos.csail.mit.edu/6.S081/2021/xv6/book-riscv-rev2.pdf
+(May be useful to refer to for labs/projects)
+
+Canvas
+We will be using Canvas as a general course platform, primarily used for reporting grades.
+
+Gradescope
+We will be using Gradescope to manage the submission and automatic grading for labs. We will also use it for grading exams.
+
+Ed
+We will be using Ed to serve as a discussion forum for the course and the primary place for making course announcements.
+
+Assistance
+We want to help you and we encourage you to visit office hours and/or ask

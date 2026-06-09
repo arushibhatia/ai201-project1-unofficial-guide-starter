@@ -1,0 +1,99 @@
+CompSci 171: Learning how to Learn with AI
+Syllabus
+
+Course Philosophy & Goals
+Artificial intelligence (AI) is a tool like any other. The goal of this class is to understand how learning works, such that when you use AI, you learn what you want to learn and have confidence that you learned it, as opposed to having an "illusion of knowing." 
+
+This course is skills-based. It focuses on the process you went through to create a product, not the product itself. You will leave with greater confidence in your knowledge and the skills required to incorporate AI into your learning process in a way that benefits rather than harms your education.
+
+Grading Marks (Specifications Rubric)
+Assignments and assessments in this course generally use the following rubric milestones rather than standard point systems:
+* [E]xemplary: Work that meets all requirements and displays full competence of all learning goals.
+* [S]uccessful: Work that meets all requirements and displays full competence of the main learning goals and at least partial competence in all learning goals.
+* [N]ot Yet: Work that does not meet some requirements and/or displays developing competence.
+
+Learning Objectives (LOs)
+The course has 13 learning objectives organized around 4 major themes. Eight (8) of these are designated as Core LOs.
+
+#  | Theme                              | Core? | Learning Objective           | Description
+---|------------------------------------|-------|------------------------------|-------------------------------------------------------------------------------------------------------------------------
+1  | What is learning?                  | Yes   | Zone of Proximal Dev (ZPD)    | Given a learning scenario, identify and explain where the learner is in terms of the ZPD.
+2  | What is learning?                  | Yes   | Revised Bloom's Taxonomy     | Given a learning activity, identify and explain where its learning objective falls in the revised Bloom's taxonomy.
+3  | How does learning work?            | Yes   | "Normal Learning"            | Given a learning scenario with setbacks, analyze aspects reflecting normal learning vs situations needing strategy shifts.
+4  | How does learning work?            | Yes   | Self-regulated Learning (SRL)| Given a learning scenario, analyze where in the 3P model the learner is and provide recommendations for that phase.
+5  | How does learning work?            | No    | Cognitive Load               | Apply cognitive load theory to identify intrinsic vs extraneous load and evaluate germane load.
+6  | How does learning work?            | No    | Motivation                   | Analyze factors affecting motivation in a learning scenario and provide recommendations to improve it.
+7  | What is AI?                        | Yes   | Different kinds of AI        | Given an AI system description, identify its type using course terminology and evaluate if/why it will be anthropomorphized.
+8  | What is AI?                        | Yes   | Intro to Data Visualization   | Pick a spot on a graph and fully describe what it means with zero ambiguity.
+9  | What is AI?                        | No    | Building Visualizations      | Critique a chart in terms of its design and recommend targeted improvements.
+10 | What is AI?                        | No    | Intro to Probability         | Given a probabilistic scenario, apply basic or conditional probability to calculate the likelihood of an event.
+11 | What is AI?                        | Yes   | Probability in the Real World | Identify the school of probabilistic thought in an excerpt, and evaluate hidden assumptions or fallacies.
+12 | Taking control of your learning    | Yes   | Learning Illusions           | Identify reasonings or behaviors that don't support learning (or use motivated reasoning) and recommend improvements.
+13 | Taking control of your learning    | No    | AI Prompting                 | Critique an AI prompt and provide recommendations for improvements that better support deep learning.
+
+Course Components & Cadence
+The course operates on a repeating 2-week cycle. On a typical week, either a homework or a resubmission is due. On resubmission weeks, the second class meeting of the week serves as an LO Checkpoint Day.
+
+Typical Weekday Cadence:
+* Prepare: Read, watch, or listen to content; take knowledge check quizzes; prepare for class discussion.
+* Class: Engage in synchronous class discussions and apply concepts dynamically.
+* Post-Class: Reflect on the material, work on homework, and log entries.
+
+1. Knowledge Check Quizzes
+* Due at 11:59 PM two days before the corresponding class discussion. 
+* Quizzes feature a 24-hour late window with no point penalty; however, submissions during the late window are excluded from the aggregate class performance data used to tailor upcoming lectures.
+* One no-questions-asked quiz extension can be requested via the forms page.
+
+2. Learning Log
+* Weekly logs track your individual learning processes and experiences. 
+* You will clone a provided Microsoft Form template, customize it with personalized questions, and share the live form link with course staff to track weekly entries.
+
+3. Homework
+* Homework acts as a feedback mechanism. Specific core questions are labeled with the LO they focus on.
+* Your overall mark on a homework assignment is the minimum mark achieved across these specific LO-labeled questions. 
+* Unlabeled helper questions do not factor into the grade, but leaving them blank limits the feedback you receive. Staff reserves the right to mandate these questions if a student has multiple failed attempts at an LO.
+* Resubmissions: You are explicitly permitted to resubmit prior homework assignments after addressing grading feedback.
+
+4. Learning Objective (LO) Checkpoints
+* Administered in person via paper every other week. Each question explicitly denotes the LO it assesses.
+* You choose which LOs to attempt during the window; you do not have to attempt all of them.
+* Grading: Your official mark for an LO is your highest score across all attempts. Lower scores on subsequent attempts never overwrite a previously earned higher mark.
+
+5. Class Engagement Points
+You must accumulate engagement points across four active categories. Points are updated weekly on Canvas. You can make up one missed discussion preparation and one reflection per week by emailing the instructor.
+* Learning Log: 1 point for the first entry of the week; 1 point for the second entry (max 2 points/week).
+* Discussion Preparation: 1 point per class day for demonstrated preparation effort.
+* Reflection: 1 point per class day for demonstrated reflection effort.
+* In-Class Activities: Up to 3 points per standard class day (1 point for attendance, 2 points for form participation/engagement). Not awarded on Checkpoint days.
+
+6. Final Project: When to Use AI Infographic
+* A personalized infographic outlining your framework for when to use (and when not to use) AI in your learning.
+* It must synthesize course concepts and the tracking data collected via your weekly learning logs.
+
+Late Tokens Policy
+* Students start the semester with 9 late-day tokens, applicable to homework assignments and the final infographic project. 
+* Homework features a 3-day late window. Missing the late window means the assignment must be submitted during the next standard resubmission cycle. Partial submissions are encouraged over empty ones to secure grading feedback.
+* To use a token, fill out the late-day form within 24 hours (before or after) of the deadline. 
+* Tokens are charged by calendar day in Duke’s time zone based on the active submission timestamp, overriding whatever was self-reported on the form. Running out of tokens requires contacting the professor via email to negotiate additions.
+
+Specifications Grading Matrix
+To earn a specific final letter grade, you must meet ALL performance baselines across every category in that tier. Falling short in any category defaults your grade down to the next lowest tier where all criteria are satisfied. Missing all criteria results in an F.
+
+Requirement       | A Tier                      | B Tier                      | C Tier                      | D Tier
+------------------|----------------------------|----------------------------|----------------------------|---------------------------
+Core LOs at E/S   | All 8                       | 7+                          | 5+                          | 3+
+Non-Core LOs (E/S)| 4+                          | 3+                          | 2+                          | 1+
+Any LO at E       | 4+ across 3 themes          | 3+ across 3 themes          | 2+ across 2 themes          | 1+ across any theme
+Engagement Points | 87 pts total                | 68 pts total                | 49 pts total                | 30 pts total
+                  | Min: 10 Log / 10 Prep      | Min: 6 Log / 7 Prep         | Min: 2 Log / 4 Prep         | Min: 0 Log / 1 Prep
+                  | Min: 10 Reflect / 30 Class  | Min: 7 Reflect / 21 Class  | Min: 4 Reflect / 12 Class  | Min: 1 Reflect / 3 Class
+Knowledge Quizzes | Class average >= 80%        | Class average >= 70%        | Class average >= 60%        | Class average >= 50%
+Homework Grades   | E/S on all assignments     | E/S on all but 1            | E/S on all but 2            | E/S on all but 3
+Final Infographic | E/S                         | E/S                         | E/S                         | E / S / N
+
+Final Exam Grade Modification
+The final exam acts as a final opportunity to demonstrate competence on any lagging LO, and serves as a mandatory recertification of competence for the 8 Core LOs. Your final mastery performance on the 8 Core LOs modifies your base course grade letter tier as follows:
+* 8 Core LOs at E/S: Grade receives a plus modifier (e.g., A becomes A+).
+* 5 to 7 Core LOs at E/S: No changes made to the base letter grade.
+* 2 to 4 Core LOs at E/S: Grade receives a minus modifier (e.g., A becomes A-).
+* 0 or 1 Core LOs at E/S: Base grade drops by one full letter tier and receives a plus modifier (e.g., A becomes B+).

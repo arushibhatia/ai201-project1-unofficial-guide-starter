@@ -1,0 +1,183 @@
+Syllabus for Compsci 201, Fall 2024
+Duke University
+
+Please see 201wo.to for information about the course, staff, and access to the course calendar and assignments.
+(Some of the wording on this page is borrowed heavily from Stats 199)
+
+Resources
+Reasonable reference: Java for Python Programmers
+
+Course Learning Objectives
+In this course, you will learn how to analyze, use, and design data structures and algorithms in an object-oriented language (Java) to solve computational problems. Emphasis on abstraction including interfaces and abstract data types for lists, trees, sets, tables/maps, and graphs. Implementation and evaluation of programming techniques including recursion. Intuitive and rigorous analysis of algorithms.
+
+* Given a problem statement and a real data source, design, develop, debug, and test a Java program that uses appropriate standard libraries to efficiently solve the problem. Realize this goal in the 7-8 projects that are a foundational part of Compsci 201.
+* Write programs that effectively implement and use data structures such as: arrays, maps, linked lists, stacks, queues, trees, and graphs. This will include java.util classes, 201 DIY classes, and some you implement yourself.
+* Evaluate the time and space complexity of iterative and recursively-defined algorithms using empirical and mathematical analysis. Compsci 201 is fundamentally about tradeoffs; this requires reasoning, measuring, thinking.
+
+Course Prerequisites
+You should have introductory programming experience at the level of Computer Science 101, Engineering 103L (now 105), or equivalent. Prior experience specifically with the Java programming language is not necessary.
+
+Course Community
+
+Duke Community Standard
+As a student in this course, you have agreed to uphold the Duke Community Standard as well as the practices specific to this course.
+
+Inclusive Community
+It is our intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength, and benefit. It is our intent to present materials and activities that are respectful of diversity and in alignment with Duke's Commitment to Diversity and Inclusion.
+
+Your suggestions are encouraged and appreciated. Please let course staff know ways to improve the effectiveness of the course for you personally, or for other students or student groups.
+
+Furthermore, we would like to create a learning environment for our students that supports a diversity of thoughts, perspectives and experiences, and honors your identities. To help accomplish this:
+* If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with course staff. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.
+* We all, like many people, are still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please let me or a member of the teaching team know.
+
+Pronouns
+Pronouns are meaningful tools to communicate identities and experiences, and using pronouns supports a campus environment where all community members can thrive. You are welcome to update your gender pronouns in Duke Hub. You can learn more at the Center for Sexual and Gender Diversity's website.
+
+Accessibility
+If there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let course staff know so we can make appropriate accommodations. The Student Disability Access Office (SDAO) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to request or update accommodations under these circumstances.
+
+Communication
+All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website: 201wo.to. This includes links to all materials, video recordings of class, information about office hours, and more.
+
+Announcements will be emailed through Canvas Announcements periodically. Please check your email regularly to ensure you have the latest announcements for the course.
+
+Where to Get Help
+If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.
+
+The teaching team is here to help you be successful in the course. You are encouraged to attend office hours to ask questions about the course content and assignments. Many questions are most effectively answered as you discuss them with others, so office hours are a valuable resource. Please use them!
+
+Outside of class and office hours, any general questions about course content or assignments should be posted on Ed, the course discussion forum. There is a possibility that another student has already asked a similar question, so please check the other posts on the forum before adding a new question. If you know the answer to a question, I encourage you to respond!
+
+Email
+If there is a question that's not appropriate for the public forum, you are welcome to email me, Ola, directly. If you email me, please include "COMPSCI 201" in the subject line. Barring extenuating circumstances, I will respond to COMPSCI 201 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.
+
+Discussion Sections
+Discussion sections are designed to be interactive, so you gain experience applying new concepts and learning from each other. We will introduce you to methods, tools, and techniques, but it is up to you to understand and apply them. You will write a great deal of Java code in Compsci 201; coding is a skill that is best learned by doing. You are expected to prepare for class by completing assigned activities, attend all lecture and discussion sessions, and meaningfully contribute to in-class exercises and discussion.
+
+You are expected to bring a laptop, tablet, or Chromebook to each class so that you can participate in the in-class exercises. You can complete class WOTO questions on a smart-phone, but a bigger screen is preferable. Please make sure your device is fully charged before you come to class.
+
+Lectures will be recorded and posted on Duke's Panopto instance, however lecture attendance should be considered mandatory. The recordings are for catching up with classes you miss due to illness, etc. You will not get the most out of this class if you're not present and actively participating in it -- this is true for lectures and discussions.
+
+Activities & Assessment
+How much time will it take to learn the material and get work done in Compsci 201? Each week you should plan on the following. These are general guidelines, but you can see that with class, discussion, weekly APT problems, and assignments that you'll likely need to allocate roughly 11-15 hours a week.
+
+Activity           | Hours/Week     | Days of Week
+-------------------|----------------|------------------
+Class/WOTO         | 1.25 * 2 = 2.5 | Mon, Wed
+Engage with class  | 0.5 * 2 = 1.0  | Tu, Thu
+Discussion         | 1.25 + 0.25=1.5| Fri (Sunday)
+Reading/Thinking   | 1 * 2 = 2      | Scattered
+APT                | Varies, 2-4    | Scattered
+Projects           | Varies, 2-6    | Scattered
+
+Grading
+The final course grade will be calculated as follows:
+
+Category                 | Percentage
+-------------------------|------------
+Assignments              | 26%
+Three Midterms and Final | 44%
+APTs                     | 8%
+APT Quizzes              | 8%
+Engagement Points        | 7%
+Discussion               | 7%
+
+Engagement Points
+There will be several ways you can engage with the material in the course. The table below outlines the methods of engagement we know will be part of the class. 100 engagement points are required for full credit. Extra engagement points may (not guaranteed) help with a grade when close to a cutoff.
+
+Method of Engaging                   | Points
+-------------------------------------|--------
+WOTOs during class (2 per 24)        | 48
+Complete WOTO before next day (24)   | 24
+Pre-lecture questions (24)           | 48
+Pre-discussion questions (14)        | 28
+DIYAD activities/questions (7)       | 28
+Project early start/questions (8)    | 24
+-------------------------------------|--------
+Total Available                      | 200
+
+* WOTOs: Questions that are part of each lecture/class are called WOTO questions since you may work together on them. You will complete these on your own/with a group during class. There are 24 class sessions in which WOTOs will be given (excluding holidays and midterm days). We will give two WOTO questions/class, for a total of 48 WOTO grades. You must complete the in-class form by logging in with your NetID within 5 minutes of when the WOTO is given to earn credit.
+* Post-Class Completion: Completing the WOTO questions anytime up to 11:59 pm the day after class earns one point per class. Completing the WOTOs for engagement points can be done even if you're not attending class.
+* Pre-Lecture: There will be questions to complete before each class. Each of these is worth two points/class. For credit, these must be completed before class starts.
+* Pre-Discussion: Similarly, there will be questions to answer before each discussion section. Each of these groups of questions is worth two points. For credit, these must be completed by 8:00 AM on Fridays, even if your discussion is later in the day.
+* DIYAD: Do It Yourself Algorithms and Data structures. We'll study how implementations work and you'll be given the opportunity to look at, comment on, and run the code that implements these data structures and algorithms.
+* Early Start: Each of the eight projects in the course will also include early/start questions that must be completed before the half-way point between project launch and due-date. Typically these require looking at the code and running it, but not writing your own code.
+
+APTs
+An APT is an Algorithmic Problem-Solving and Testing program you write. Typically you'll write one method, perhaps with some helper methods, to solve the problem. Testing is online and automated. These are due roughly each week on Thursday. For Fall 2024, four APTs are due for each set and late APT submissions are not accepted. There will be opportunities to do extra APTs to make up for those you may miss. The challenge and extra APTs are optional. 
+
+In general, we will do some of these in class and discussion and you'll do some on your own. You may collaborate with others, but you should be able to write the code/solutions on your own since you'll need to do that for APT quizzes and for job interviews. APTs can be submitted through end-of-day Friday, but after that no credit is given.
+
+APT Quizzes
+There are two APT quizzes. You'll have 2 hours to complete three APT problems on your own. You will be able to start each two hour period whenever you choose during a roughly three day window. You must complete these on your own without speaking to anyone. You may use online resources including official Java Documentation, Google, etc., though these should be used to understand Java and likely won't be helpful in solving the problems. You may use your class notes. 
+
+We will run similarity detection software on student submissions as part of determining your work is your own. Your solution must solve input cases not visible to you to receive credit, i.e., you cannot use a sequence of if-statements based on input values to receive credit. Use of ChatGPT or other LLMs is not allowed when completing APT quizzes. We will look carefully at all submissions, at the log of each submission, and you'll be asked to record your screen during completion of each APT quiz.
+
+Discussion
+Discussion sections are on Friday. There are 14 discussion sessions during Fall 2024, so each discussion counts for 0.5% of your grade in 201.
+
+Discussions in 201 are done in a group. The UTAs in your section will help ensure groups function well and that there is a discussion (WOTO) rather than people working individually. The first 15-20 minutes of each discussion will be completed without using a computer/device and typically will be about work done in the week before discussion happens (e.g., the last completed assignment, APT set, class lectures). You'll have engagement point questions to complete before each discussion. You will be graded based on being on task rather than correctness, and this part of discussion is used to demonstrate attendance. Each person must turn in their answers individually, even when answered collaboratively. 
+
+There will be other discussion questions that will require using your laptop -- that part of discussion will be distributed via an online discussion document. You can complete this on your own (anytime through midnight Sunday) or as a group during your discussion for credit. You will fill out a NetID-authenticated form answering the questions. Attendance counts for 50% of discussion, completion of the remaining questions for 50%.
+
+We will allow three discussion absences without penalty, but that's only for the required attendance part of discussion. When you do not attend discussion in person, you are expected to complete the online part of discussion through Sunday for credit. You can miss three of those. If you attend discussion in person, you will NOT need to complete the online/reflect form; you'll get credit for the entire discussion by participating in a group where UTAs record attendance. If you are not in person, you'll need to complete the online/reflect form before Sunday at midnight. The reflect form will only be available after all discussion sections are over. 
+
+You will be asked to complete an assessment of collaboration within your discussion group. Completing this is required to earn the discussion participation/in-person credit.
+
+Assignments
+These are programming projects that will require several hours to complete, with later projects requiring more time to understand and complete. There are eight of these. The projects at the end of the semester will take longer and are worth more than projects at the beginning of the semester. Assignments will be weighted as follows: the first two assignments carry a weight of 1.0, the next three 2.0, and the last three 3.0. 
+
+You may discuss the assignment and strategies to solve it with other students, but the programs you write and the written answers to questions you submit should be your own. As a general rule of thumb, if you would not be able to explain or reproduce your code on your own, you should not submit it as your own work. Questions from projects may be part of the midterm and final and will be part of discussion sections.
+
+Individual extensions will be granted for medical reasons (see the Incapacitation form) or other circumstances beyond your control that must be obtained by talking to the instructors. We do not grant extensions after an assignment is due.
+
+Projects are due on Monday. You'll submit using Git and Gradescope and an autograder will determine whether your code passes a suite of tests. In general, passing 85% of the tests will result in full credit for the assignment. Projects turned in up to 24 hours late receive no penalty. After that, a late submission loses 10% a day (weekend counts as one day). Projects are not accepted after one week. Each project requires developing code and answering questions about the assignment (the project's analysis). Your write-up should be your own.
+
+Exams
+There are three midterms scheduled in 201 for Fall 2024. Each counts for 11% of your course grade. These will be held during class, in the classroom. You may not use any electronic device nor may you communicate with anyone. Exams will be multiple choice and/or short-answer; you will not be expected to write extensive code or paragraphs. The final exam is mandatory, counts for 11% of your grade, and is divided into three sections corresponding to the three midterm exams.
+
+(Modified on October 1): You will be given the better of your midterm and final score on each midterm section. If you miss a midterm exam, the final will be the only score used (since the missed midterm will earn a score of zero). There are no makeup/short-term illness exceptions to this rule. Your score on the final exam itself is not replaced by the corresponding midterm score; the final will count for 11% as is.
+
+When taking the exam you must bring a pen or a pencil. You may bring up to six single-sided / three double-sided helper sheets that include anything you want. Your name must be on all the pages and you must leave these sheets in the room when you turn in your exam.
+
+Grading Scale
+Grading is done on an absolute, but adjustable scale. There is no curve. Anyone earning 90% or more of the total points will receive a grade in the A range; 80% or more guarantees a B range grade; 70% or more guarantees a C range grade; 60% or more guarantees a D range grade. This scale may slide down, but it will not go up. Note that cut-offs between +/- tiers are not fixed. However, the A/A- cutoff will be 94% or higher, similarly for the other cutoffs (e.g., B/B- at 84%).
+
+Letter Grade | Final Course Grade
+-------------|-------------------
+A            | >= 94
+A-           | 90 - 93.99
+B+           | 87 - 89.99
+B            | 83 - 86.99
+B-           | 80 - 82.99
+C+           | 77 - 79.99
+C            | 73 - 76.99
+C-           | 70 - 72.99
+D+           | 67 - 69.99
+D            | 63 - 66.99
+D-           | 60 - 62.99
+F            | < 60
+
+Five Tips for Success
+1. Complete all the preparation work before class and before discussion.
+2. Ask questions as often as you can (in class, via Ed, to staff, TAs, and peers). If anything is confusing, please ask.
+3. Keep up with class, discussion, readings, and assignments.
+4. Do APTs and Assignments early: read, think, try, try again. Ask for help!
+5. Don’t procrastinate. The content builds week-to-week. Don’t let the week end with unanswered questions. If falling behind, come to office hours to find a restarting point.
+
+Collaboration, LLMs, and Course Behavior
+
+All your work, even when done collaboratively, is your responsibility in terms of being able to demonstrate understanding, knowledge, and mastery. If you cannot complete the work without extensive reliance on the Internet, peers, and AI-assistance, you will likely not succeed in further studies or interviews.
+
+For in-class exams and for APT quizzes, you may not use any AI-assistance. No computers or electronic devices may be used in completing exams. If you are found to have violated these terms for any exam, you will earn 0% credit for that exam as well as an additional letter-grade deduction from your final grade. If you are found to have violated these terms for any part of an APT quiz, you will earn 0% credit for all APT quizzes during the semester.
+
+For APTs (not quizzes), projects, and discussion we explicitly encourage collaboration, though that should not mean showing your code to someone except for help with debugging unless you're working on a project that explicitly allows a partner.
+
+Academic Honesty & Recording
+* Projects: We may require you to record roughly the first twenty minutes you spend programming (not reading the assignment) by using Zoom and recording your screen to the cloud. Share your entire Desktop/Screen. Audio and video paths are optional. You will submit this URL/link as part of each project. We do not run software similarity detection tools on code submitted for projects, but we ask you to list everyone you talked with.
+* APT Quizzes: You are required to record your screen from beginning to completion of each APT quiz problem. You must work alone and without using ChatGPT, other LLMs, or Copilot. We review every APT submission log and run software similarity detection tools comparing your work with other students and LLM outputs.
+
+ChatGPT/LLMs and Copilot
+* ChatGPT/LLMs: We encourage you to use ChatGPT or other LLMs to understand material (e.g., asking for explanations of instance variables or algorithmic complexities). You should not ask an LLM to write code specific to an assignment -- instead ask for generic examples. If you use ChatGPT, indicate it in the README submitted with your analysis.
+* Copilot: We ask you to disable or not install Copilot when working on APTs and assignments. Because many past solutions exist publicly, Copilot can auto-complete full blocks of code. While we don't run similarity checks on regular APT submissions, relying on Copilot bypasses the primary learning goal. For assignments, details change semester-to-semester, meaning Copilot may produce code that is incorrect or leads to test failures.
