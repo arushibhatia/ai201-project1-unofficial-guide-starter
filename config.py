@@ -2,7 +2,7 @@
 
 Values here are pulled from planning.md so the rest of the pipeline can import
 them in one place. The chunking constants come directly from the Chunking
-Strategy section: a 900-character sliding window with 150 characters of
+Strategy section: a 500-character sliding window with 150 characters of
 overlap, sized to keep grading-policy tables and multi-sentence rules intact.
 """
 

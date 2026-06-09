@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/bin/python embed_and_retrieve.py character)"
+    ]
+  }
+}

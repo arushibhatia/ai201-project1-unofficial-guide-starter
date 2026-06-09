@@ -53,13 +53,29 @@ I also built the chunker so the strategy is selectable at runtime (`character` v
 
 ---
 
-## Embedding Model
+## Chunking Strategy Comparison
 
-<!-- Name the embedding model you used and explain your choice.
-     Then answer: if you were deploying this system for real users and cost wasn't a constraint,
-     what tradeoffs would you weigh in choosing a different model?
-     Consider: context length limits, multilingual support, accuracy on domain-specific text,
-     latency, and local vs. API-hosted. -->
+I ran the full pipeline under both selectable strategies — `character` and `paragraph` — over the same query set: the 5 evaluation questions plus the documented CS330 failure case. Everything except chunking was held constant. I then judged the generated answers against the expected answers. This is reproducible with `python compare_chunking.py`.
+
+| # | Question | `character` answer | `paragraph` answer | Better |
+|---|----------|--------------------|--------------------|--------|
+| 1 | How is the final exam administered in CS230? | Accurate — online, take-home, open-book/notes, released 12:01am, due 11:59pm ET, ~3 hrs untimed in 24-hr window | Accurate — same content | tie |
+| 2 | How much is Exam 3 worth in CS116? | Accurate — "18%" | Accurate — "18%" | tie |
+| 3 | How is CS216 structured? | Accurate — "Hybrid, Flipped, and Just-in-Time…" with the full explanation | "I don't have enough information on that." | **character** |
+| 4 | What is the late submission penalty for projects in CS201? | Accurate — ≤24 hrs no penalty, then 10%/day | Accurate — same, plus "not accepted after one week" | tie |
+| 5 | Should I take CS 201 before CS 101? | Accurate — no, CS101 is the prerequisite | Accurate — same conclusion | tie |
+| 6 | What are the prerequisites for CS 330? *(failure case)* | "I don't have enough information" | "I don't have enough information" | tie |
+
+**Score on the 5 evaluation questions: `character` 5/5 accurate, `paragraph` 4/5.**
+
+**Which performed better, and why:**
+**`character` produced higher-quality responses for this corpus.** On four of the five evaluation questions the two strategies produce effectively identical, accurate answers — these are short, keyword-heavy lookups (an exam weight, a late penalty, a prerequisite line) where either way of splitting keeps the relevant fact intact, so the *response* is the same regardless of chunking. The strategies diverge on **Q3 ("How is CS216 structured?")**, and that single question is decisive: under `character` the system returns a complete, correct answer ("CS216 is structured as a Hybrid, Flipped, and Just-in-Time course…"), while under `paragraph` it refuses entirely with "I don't have enough information on that."
+
+I think this is because of how each strategy split the CS216 structure section, which the syllabus writes as a heading plus three bullets (`Course Structure: Hybrid, Flipped, Just-in-Time`, then the Hybrid/Flipped/Just-in-Time explanations). `paragraph` chunking keeps that whole block as one large chunk that also includes in other details irrelevant to the strategy in the same paragraph. It's likely that those extra words pull the chunk's embedding directionally away from what the query looks like, so it never enters the top-10 the generator sees. `character` chunking instead carves a short, focused chunk around the `Course Structure: Hybrid, Flipped…` heading, whose embedding stays close to the query, so the generator receives the right text and answers it. The overlap also gives each section a second chance to surface near a window boundary. In short, `paragraph`'s "respect the natural structure" behavior backfires when a section is long and topically mixed because it dilutes the embedding and costs an answer, whereas `character`'s fixed-size windows keep every chunk narrow enough to match. This is consistent with the Evaluation Report below, which was run under the default `character` strategy and scored all 5 questions accurate.
+
+---
+
+## Embedding Model
 
 **Model used:**
 `all-MiniLM-L6-v2`, run locally through the `sentence-transformers` library. ChromaDB handles the embedding automatically through its `SentenceTransformerEmbeddingFunction`, and the collection is configured to use cosine distance for similarity. I chose this model because it's small, fast, and runs locally with no API key or per-call cost, which made it easy to re-embed the whole corpus repeatedly while I was tuning chunk size and top-k. For short syllabus chunks it gives good enough semantic matching, and at 384 dimensions it keeps the vector store lightweight for a corpus this size.
@@ -70,13 +86,6 @@ If I were deploying this for real students and cost wasn't a concern, the main t
 ---
 
 ## Grounded Generation
-
-<!-- Explain how your system enforces grounding — how does it prevent the LLM from answering
-     beyond the retrieved documents?
-     Describe both your system prompt (what instruction you gave the model) and any structural
-     choices (e.g., how you formatted the context, whether you filtered low-relevance chunks).
-     Do not just say "I told it to use the documents" — show the actual instruction or explain
-     the mechanism. -->
 
 **System prompt grounding instruction:**
 > "You are an assistant that answers questions about Duke University computer science course syllabi. Answer using ONLY the syllabus text provided in the context below. If the provided context does not contain enough information to answer, respond exactly with: 'I don't have enough information on that.' Do not use outside or prior knowledge, and do not guess or fill in gaps from what you may know about Duke courses. When you do answer, make clear which course each part of the answer comes from by citing the source syllabus in parentheses with its .txt filename, for example (Source: CS201.txt)."
