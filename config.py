@@ -8,6 +8,11 @@ overlap, sized to keep grading-policy tables and multi-sentence rules intact.
 
 import os
 
+from dotenv import load_dotenv
+
+# Load environment variables from .env (e.g. GROQ_API_KEY).
+load_dotenv()
+
 # --- Paths ---------------------------------------------------------------
 # Folder holding the cleaned .txt syllabus documents.
 DOCS_PATH = os.path.join(os.path.dirname(__file__), "documents")
@@ -24,4 +29,8 @@ CHROMA_PATH = os.path.join(os.path.dirname(__file__), "chroma_db")  # persistent
 CHROMA_COLLECTION = "syllabi"                 # collection name in ChromaDB
 
 # --- Retrieval -----------------------------------------------------------
-N_RESULTS = 6          # top-k chunks returned per query
+N_RESULTS = 10          # top-k chunks returned per query
+
+# --- Generation (planning.md → Architecture diagram) ---------------------
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")      # loaded from .env, never hardcoded
+LLM_MODEL = "llama-3.3-70b-versatile"         # Groq free-tier, OpenAI-compatible

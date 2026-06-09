@@ -65,7 +65,9 @@ Chunk size of 500 will allow the chunks to express relevant sections of data. On
 all-MiniLM-L6-v2 via sentence-transformers
 
 **Top-k:**
-6
+10
+
+(Updated during implementation from 6 to 10. With k=6, several questions retrieved no relevant chunk and the model correctly refused to answer. Bumping to 10 widened the candidate set enough to answer questions better, at the cost of slightly noisier context on simpler questions.)
 
 **Production tradeoff reflection:**
 I would look at models that are trained on domain-specific text. More sophisticated models would allow for greater semantic accuracy regarding what's being discussed in these syllabi.
