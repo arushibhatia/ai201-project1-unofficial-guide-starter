@@ -35,7 +35,7 @@ def load_documents():
     return documents
 
 
-def chunk_document(text, course):
+def chunk_document(text, course, source):
     """Split one syllabus into chunks ready for embedding.
 
     Strategy: character-based sliding window with overlap (per planning.md).
@@ -50,6 +50,8 @@ def chunk_document(text, course):
     Returns a list of dicts, each with:
       - "text"     : the chunk text (str)
       - "course"   : the course code, e.g. "CS201" (str)
+      - "source"   : the source document filename, e.g. "CS201.txt" (str)
+      - "position" : the chunk's 0-based position within its document (int)
       - "chunk_id" : a unique identifier, e.g. "cs201_0", "cs201_1" (str)
     """
     chunk_size = CHUNK_SIZE
@@ -70,6 +72,8 @@ def chunk_document(text, course):
             chunks.append({
                 "text": chunk_text,
                 "course": course,
+                "source": source,
+                "position": counter,
                 "chunk_id": f"{prefix}_{counter}",
             })
             counter += 1
@@ -86,7 +90,7 @@ def chunk_all_documents():
     documents = load_documents()
     all_chunks = []
     for doc in documents:
-        doc_chunks = chunk_document(doc["text"], doc["course"])
+        doc_chunks = chunk_document(doc["text"], doc["course"], doc["filename"])
         print(f"  {doc['course']}: {len(doc_chunks)} chunks")
         all_chunks.extend(doc_chunks)
     print(f"Created {len(all_chunks)} chunks total across {len(documents)} document(s).")
