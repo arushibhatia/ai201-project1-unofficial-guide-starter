@@ -8,10 +8,10 @@ from embed_and_retrieve import retrieve
 
 # The 5 test questions from planning.md → Evaluation Plan.
 TEST_QUESTIONS = [
-    "Which courses allow you to use AI?",
-    "Does CS 201 allow you to retake exams?",
-    "What percentage does discussion account for in CS201?",
-    "What are the prerequisites for CS 330?",
+    "How is the final exam administered in CS230?",
+    "How much is Exam 3 worth in CS116?",
+    "How is CS216 structured?",
+    "What is the late submission penalty for projects in CS201?",
     "Should I take CS 201 before CS 101?",
 ]
 

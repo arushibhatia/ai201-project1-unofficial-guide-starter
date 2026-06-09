@@ -18,9 +18,13 @@ load_dotenv()
 DOCS_PATH = os.path.join(os.path.dirname(__file__), "documents")
 
 # --- Chunking (planning.md → Chunking Strategy) --------------------------
-# Character-based sliding window.
-CHUNK_SIZE = 500       # chars per chunk: fits grading charts / retake policies
-CHUNK_OVERLAP = 150    # chars shared at each boundary: ~2-3 sentences of context
+# Default chunking strategy. Either:
+#   "character" — fixed-size sliding window with overlap
+#   "paragraph" — split on blank lines, one chunk per paragraph (no size cap)
+# Can be overridden at runtime (e.g. `python embed_and_retrieve.py paragraph`).
+CHUNK_STRATEGY = "character"
+CHUNK_SIZE = 500       # chars per chunk / paragraph-packing target
+CHUNK_OVERLAP = 150    # chars shared at each boundary (character strategy only)
 CHUNK_MIN_LENGTH = 50  # drop whitespace artifacts / tiny trailing fragments
 
 # --- Embedding + Vector Store (planning.md → Retrieval Approach) ----------

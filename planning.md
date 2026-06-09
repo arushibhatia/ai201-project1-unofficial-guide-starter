@@ -51,6 +51,14 @@ I will split these documents into chunks that are character-based.
 **Reasoning:**
 Chunk size of 500 will allow the chunks to express relevant sections of data. One tradeoff is it may not be able to accurately express, in one chunk, the various matricies that are present across the sources (grading policy charts, exam retake policies, etc.) without splitting the key rules across chunks. The overlap of 150 will ensure that roughly 2-3 sentences are overlapped across chunks. This will prevent rules that span the context of 2-3 sentences are captured without being split across chunks.
 
+**Stretch feature — selectable chunking strategy:**
+The chunker supports two strategies, chosen at runtime (default set by `CHUNK_STRATEGY` in config.py, overridable on the command line, e.g. `python embed_and_retrieve.py paragraph`):
+
+- `character` — the fixed-size sliding window described above (CHUNK_SIZE / CHUNK_OVERLAP).
+- `paragraph` — splits on blank lines and emits one chunk per paragraph with no size cap and no overlap. This respects the document's natural structure, so a rule written as a single paragraph stays intact rather than being split across a window boundary. The tradeoff is uneven chunk sizes (a one-line header and a long policy paragraph become equally-weighted chunks).
+
+This lets us compare how chunk shape — not just chunk size — affects retrieval on the same corpus. Empirically, paragraph chunking produced richer answers on the "which courses allow AI?" question (it recovered CS101's specific LLM policy), but the stubborn failures (CS201 exam retakes, CS330 prerequisites) persisted under both strategies.
+
 ---
 
 ## Retrieval Approach
@@ -83,10 +91,10 @@ I would look at models that are trained on domain-specific text. More sophistica
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | Which courses allow you to use AI? | COMPSCI 370D  forbids automatic code generators, requiring all work to be original. CS 230, CS 116, and CS 201 govern AI usage under Duke Community Standard rules. |
-| 2 | Does CS 201 allow you to retake exams? | Yes. Mini Exams 1 and 2 feature scheduled retakes (comparable assessments with different questions). The system drops the lower score and keeps the higher of the two. The retake for Mini Exam 3 is integrated into the Final Exam, and there are no retakes for the retakes. |
-| 3 | What percentage does discussion account for in CS201? | Discussion sessions account for 12% of the final grade across roughly 14 individual weekly sessions. |
-| 4 | What are the prerequisites for CS 330? | The explicit prerequisites for COMPSCI 330 are COMPSCI 201 and COMPSCI 230 or an approved equivalent. ||
+| 1 | How is the final exam administered in CS230? | Online, take-home, open-book and open-notes. Released at 12:01am and due by 11:59pm Eastern, designed to take roughly 3 hours but untimed within the 24-hour window. |
+| 2 | How much is Exam 3 worth in CS116? | 18% of the final grade. |
+| 3 | How is CS216 structured? | Hybrid, Flipped, and Just-in-Time. Eeasier material is learned before class via readings, videos, and comprehension quizzes, and class time is spent actively engaging with the harder material. |
+| 4 | What is the late submission penalty for projects in CS201? | Projects up to 24 hours late receive no penalty. After that a late submission loses 10% per day. |
 | 5 | Should I take CS 201 before CS 101? | No. CS101 is a prerequisite for CS201. |
 
 ---

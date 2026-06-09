@@ -28,6 +28,27 @@ def get_collection():
     return _collection
 
 
+def reset_collection():
+    """Drop and recreate the collection so a fresh ingestion starts empty.
+
+    Useful when re-ingesting with a different chunking strategy or chunk size:
+    the old vectors would otherwise persist (and their chunk_ids would collide
+    with the new ones on add()).
+    """
+    global _collection
+    try:
+        _client.delete_collection(CHROMA_COLLECTION)
+    except Exception:
+        # Collection may not exist yet on a first run — that's fine.
+        pass
+    _collection = _client.get_or_create_collection(
+        name=CHROMA_COLLECTION,
+        embedding_function=_ef,
+        metadata={"hnsw:space": "cosine"},
+    )
+    return _collection
+
+
 def embed_and_store(chunks):
     """Embed a list of chunks and store them in the vector database.
 
@@ -110,11 +131,20 @@ def retrieve(query, n_results=N_RESULTS):
 
 
 if __name__ == "__main__":
-    # Quick verification: ingest all chunks, then run a sample query.
+    # Ingest all chunks, then run a sample query. The chunking strategy can be
+    # chosen at runtime, e.g.:
+    #   python embed_and_retrieve.py paragraph
+    #   python embed_and_retrieve.py character   (default)
+    import sys
+
+    from config import CHUNK_STRATEGY
     from chunking import chunk_all_documents
 
-    print("Ingesting chunks into ChromaDB...")
-    embed_and_store(chunk_all_documents())
+    strategy = sys.argv[1] if len(sys.argv) > 1 else CHUNK_STRATEGY
+
+    print(f"Ingesting chunks into ChromaDB using '{strategy}' chunking...")
+    reset_collection()  # start fresh so a strategy switch doesn't mix old chunks
+    embed_and_store(chunk_all_documents(strategy=strategy))
 
     print("\nSample query: 'Does CS 201 allow you to retake exams?'")
     print("-" * 60)

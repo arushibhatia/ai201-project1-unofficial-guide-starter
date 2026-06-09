@@ -23,13 +23,13 @@ def generate_response(query, retrieved_chunks):
       - "position" : the chunk's position within its document
       - "distance" : cosine distance (lower = more similar)
 
-    The answer is grounded two ways:
-      1. The system prompt forbids using outside/training knowledge and tells
-         the model to say so when the context doesn't contain the answer.
-      2. After generation, the source documents that were actually retrieved
-         are appended programmatically, so attribution can't be hallucinated.
+    Grounding comes from the system prompt, which forbids using outside/training
+    knowledge and tells the model to say so when the context doesn't contain the
+    answer. Source attribution is handled separately by sources_from_chunks(),
+    which derives the source list from the retrieved chunks themselves so it
+    can't be hallucinated.
 
-    Returns the response as a plain string.
+    Returns the model's answer as a plain string (no source list appended).
     """
     if not retrieved_chunks:
         return (
@@ -59,7 +59,8 @@ def generate_response(query, retrieved_chunks):
         "Do not use outside or prior knowledge, and do not guess or fill in "
         "gaps from what you may know about Duke courses. "
         "When you do answer, make clear which course each part of the answer "
-        "comes from by naming the course (e.g. CS201) in your response."
+        "comes from by citing the source syllabus in parentheses with its .txt "
+        "filename, for example (Source: CS201.txt)."
     )
 
     user_prompt = (
@@ -78,19 +79,21 @@ def generate_response(query, retrieved_chunks):
         temperature=0.0,  # deterministic, reduces drift away from the context
     )
 
-    answer = completion.choices[0].message.content or ""
+    return completion.choices[0].message.content or ""
 
-    # Append the actual retrieved sources programmatically. This guarantees the
-    # attribution reflects what was really retrieved, independent of the model.
-    # The course code doubles as the filename, so the source is course + ".txt".
+
+def sources_from_chunks(retrieved_chunks):
+    """Return the unique source filenames behind a set of retrieved chunks.
+
+    The course code doubles as the filename, so the source is course + ".txt".
+    Order is preserved (already sorted best-match-first by retrieve()).
+    """
     sources = []
     for chunk in retrieved_chunks:
         source = f"{chunk.get('course', 'Unknown')}.txt"
         if source not in sources:
             sources.append(source)
-    sources_block = "\n".join(f"- {s}" for s in sources)
-
-    return f"{answer}\n\nSources retrieved:\n{sources_block}"
+    return sources
 
 
 if __name__ == "__main__":
@@ -102,3 +105,6 @@ if __name__ == "__main__":
     chunks = retrieve(question)
     print("\n" + "=" * 70)
     print(generate_response(question, chunks))
+    print("\nSources retrieved:")
+    for source in sources_from_chunks(chunks):
+        print(f"- {source}")
