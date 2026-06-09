@@ -43,13 +43,13 @@ The domain I have selected is Syllabi for Duke University CS Courses. These syll
 I will split these documents into chunks that are character-based. 
 
 **Chunk size:**
-900
+500
 
 **Overlap:**
 150
 
 **Reasoning:**
-Chunk size of 900 will allow the chunks to fit the various matricies that are present across the sources (grading policy charts, exam retake policies, etc.) without splitting the key rules across chunks. The overlap of 150 will ensure that roughly 2-3 sentences are overlapped across chunks. This will prevent rules that span the context of 2-3 sentences are captured without being split across chunks.
+Chunk size of 500 will allow the chunks to express relevant sections of data. One tradeoff is it may not be able to accurately express, in one chunk, the various matricies that are present across the sources (grading policy charts, exam retake policies, etc.) without splitting the key rules across chunks. The overlap of 150 will ensure that roughly 2-3 sentences are overlapped across chunks. This will prevent rules that span the context of 2-3 sentences are captured without being split across chunks.
 
 ---
 
@@ -95,7 +95,7 @@ I would look at models that are trained on domain-specific text. More sophistica
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1. While I have accounted for large chunk size to account for things like the large tables etc. This could be problematic because for other plain-text chunks, it may be too big.
+1. The chunk size may not be large enough to house an entire table (ex. grading policy matrix). Those may be split across chunks.
 
 2. Many of the syllabi include similar information but have key differences. When retrieving data, the embeddings may not persist sufficient information to distinguish which course's information is being read from.
 
@@ -125,7 +125,7 @@ I would look at models that are trained on domain-specific text. More sophistica
 
 Document Ingestion: I plan to use manual effort + Gemini to clean my sources to make sure they are rid of random HTML tags, etc. I'll remove large portions of unwanted data myself and paste the remaining text to Gemini with my expectations of what should and should not be there and ask it to clean it. I expect it to produce text that I can copy into txt files.
 
-Chunking: I plan to use Claude to help me write chunk_text(). I will give it my Chunking Strategy section above so it can pull the Chunk Size and Overlap Size. I expect it to produce the working code. I will verify it through printing out what example chunks look like and ensure that the correct config values for chunk size and overlap are being used.
+Chunking: I plan to use Claude to help me write chunk_text(). I will give it my Chunking Strategy section above so it can pull the Chunk Size and Overlap Size. I will also describe what I want my desired result to look like from that function in terms of what needs to be stored. I expect it to produce the working code. I will verify it through printing out how many chunks were created per doc and ensure that the correct config values for chunk size and overlap are being used.
 
 Embedding + Vector Store: I plan to use Claude to help me write embed_and_store(). I will provide it with the diagram above so it knows to use ChromaDB. I will print how many vectors were stored and use that to test.
 
