@@ -51,6 +51,81 @@ I also built the chunker so the strategy is selectable at runtime (`character` v
 **Final chunk count:**
 236 chunks across all 10 documents.
 
+**Sample chunks:**
+Five real chunks produced by the default `character` strategy (reproduce with `python chunking.py character`). Each is labeled with its `chunk_id`, source file, 0-based position in its document, and character length.
+
+```
+[chunk_id: cs216_0 | source: CS216.txt | position: 0 | 500 chars]
+CS216 Everything Data - Spring 2025
+Syllabus
+
+Course Structure: Hybrid, Flipped, Just-in-Time
+* Hybrid: A Zoom session is associated with the class for equity. However, you are
+expected to attend class in person if at all possible. To attend online, you must
+request it on the forms page to receive that day's password.
+* Flipped: Easier-to-grasp material is learned before class via readings, videos,
+and comprehension quizzes. Class time is spent actively engaging with the more
+complex, harder-to-
+```
+*A short, topically focused chunk around the "Course Structure" heading — this is the chunk that lets the system answer Q3 under `character` but not `paragraph` (see the comparison below).*
+
+```
+[chunk_id: cs116_7 | source: CS116.txt | position: 7 | 499 chars]
+ng that third of the semester.
+* Project 3 (Final Project): An open-ended project of your group's choosing. Your
+group is responsible for finding, cleaning, exploring, and analyzing a unique
+dataset.
+
+Exams
+* Three evenly spaced midterms administered individually.
+* To minimize high-stakes stress, Exam 3 takes place on the final day of standard
+class rather than a block final exam period.
+* Before Exam 1, the instructor will run an in-class mock exam so students can
+familiarize themselves with
+```
+
+```
+[chunk_id: cs201_44 | source: CS201.txt | position: 44 | 499 chars]
+her your code passes a suite of tests. In general, passing 85% of the tests will
+result in full credit for the assignment. Projects turned in up to 24 hours late
+receive no penalty. After that, a late submission loses 10% a day (weekend counts
+as one day). Projects are not accepted after one week. Each project requires
+developing code and answering questions about the assignment (the project's
+analysis). Your write-up should be your own.
+
+Exams
+There are three midterms scheduled in 201 for Fall
+```
+
+```
+[chunk_id: cs201_45 | source: CS201.txt | position: 45 | 499 chars]
+questions about the assignment (the project's analysis). Your write-up should be
+your own.
+
+Exams
+There are three midterms scheduled in 201 for Fall 2024. Each counts for 11% of
+your course grade. These will be held during class, in the classroom. You may not
+use any electronic device nor may you communicate with anyone. Exams will be
+multiple choice and/or short-answer; you will not be expected to write extensive
+code or paragraphs. The final exam is mandatory, counts for 11% of your grade, an
+```
+```
+[chunk_id: cs330_0 | source: CS330.txt | position: 0 | 499 chars]
+COMPSCI 330 Design and Analysis of Algorithms
+Summer 2018
+
+Class: M/Tu/W/Th 3:30 - 5:05pm (LSRC A156)
+Recitations: Tu/Th 2:00 - 3:15pm (Allen 103)
+Prerequisites: CompSci 201 and CompSci 230 (or equivalent)
+Course Website: https://www2.cs.duke.edu/courses/summer18/compsci330
+Instructor: Brandon Fain
+Office Hours: 2-3:20 pm M/W and 5:15-6:15 pm Th in LSRC D301
+Contact: By email at btfain@cs.duke.edu (expect a response within a business day)
+
+Required Book:
+Algorithms by Sanjoy Dasgupta, Christos
+```
+
 ---
 
 ## Chunking Strategy Comparison
@@ -82,6 +157,48 @@ I think this is because of how each strategy split the CS216 structure section, 
 
 **Production tradeoff reflection:**
 If I were deploying this for real students and cost wasn't a concern, the main thing I'd weigh is accuracy on domain-specific text. `all-MiniLM-L6-v2` is a general-purpose model, and my failure case (the CS330 prerequisites question) shows its weakness: it doesn't strongly tie a query like "CS 330" to the document that says "COMPSCI 330". A larger or domain-tuned embedding model (or one fine-tuned on academic/course text) would likely capture the course-identity signal better. I'd also consider models with a longer context limit so I could embed bigger chunks (like a full grading table) without splitting them. The tradeoffs there are added latency and cost per query, plus a dependency on an external service — for a small, local class project the lightweight local model is the better fit, but for a real deployment I'd trade some of that speed and simplicity for retrieval accuracy.
+
+---
+
+## Retrieval
+
+Retrieval is a semantic search over the 236 embedded chunks: the query is embedded with the same `all-MiniLM-L6-v2` model and ChromaDB returns the top `k=10` chunks by cosine distance (lower = closer). The examples below are real output from `python embed_and_retrieve.py` (truncated for readability), showing each query, the top returned chunks with their cosine distance, and which chunk actually answers the question.
+
+A consistent pattern shows up across all three: because every syllabus shares the same vocabulary (every course has exams, projects, late penalties, and grading tables), several near-miss chunks from *other* courses crowd the top of the ranking, but the chunk that actually answers the question is reliably pulled into the top-10 the generator sees — which is why all five evaluation answers come out accurate.
+
+### Example 1 — "How much is Exam 3 worth in CS116?"
+
+| Rank | Chunk | Distance | Relevant? |
+|------|-------|----------|-----------|
+| 1 | CS116.txt#7 | 0.519 | Partial — CS116 exam *section*, but describes exam scheduling, not weights |
+| 2 | CS250.txt#5 | 0.530 | Off — CS250 grading breakdown (wrong course) |
+| 3 | CS216.txt#12 | 0.532 | Off — CS216 practicum grading |
+| … | … | … | |
+| **10** | **CS116.txt#10** | **0.589** | **Yes — the grading table, where Exam 3 is listed at 18%** |
+
+The exact answer (`Exam 3 | 18%`) lives in CS116.txt#10, which lands at rank 10. The higher-ranked distractors are other courses' grading/exam chunks that share the words "exam" and "grade." It's a close call, but the relevant chunk is retrieved within `k=10`, so the generator answers correctly ("Exam 3 is worth 18%"). This is the weakest of the three retrievals and the main argument for keeping `k` at 10 rather than lower.
+
+### Example 2 — "What is the late submission penalty for projects in CS201?"
+
+| Rank | Chunk | Distance | Relevant? |
+|------|-------|----------|-----------|
+| 1 | CS116.txt#10 | 0.409 | Off — CS116 grading table + late-window text (wrong course) |
+| **2** | **CS201.txt#44** | **0.429** | **Yes — `Projects turned in up to 24 hours late receive no penalty. After that … 10% a day`** |
+| 3 | CS370.txt#4 | 0.483 | Off — CS370 late penalty (wrong course) |
+| 4 | CS230.txt#14 | 0.492 | Off — CS230 late penalty (wrong course) |
+
+Strong retrieval: the correct chunk (CS201.txt#44) is rank 2, behind only a CS116 chunk that matched on "late" + "penalty" generically. The full late-submission rule sits intact in one chunk, so the generator reproduces it exactly.
+
+### Example 3 — "How is the final exam administered in CS230?"
+
+| Rank | Chunk | Distance | Relevant? |
+|------|-------|----------|-----------|
+| 1 | CS101.txt#20 | 0.404 | Off — CS101 final exam date/time (wrong course) |
+| 2 | CS201.txt#46 | 0.423 | Off — CS201 final exam format (wrong course) |
+| … | … | … | |
+| **6** | **CS230.txt#11** | **0.455** | **Yes — `Final Exam … Online, take-home, open-book, open-notes … Released at 12:01am … untimed within the 24-hour window`** |
+
+The answer chunk (CS230.txt#11, the "Exam Policy" block) is at rank 6. Every other course's "final exam" chunk scores slightly closer to the generic phrasing of the query, but the CS230 chunk is comfortably inside `k=10`, so the generator produces the full, accurate administration detail.
 
 ---
 
